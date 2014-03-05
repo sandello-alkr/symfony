@@ -57,7 +57,7 @@ assetic:
     assets:
         bootstrap_css:
             inputs:
-                - %kernel.root_dir%/../vendor/sandello-alkr/cmsbundle/sandello-alkr/CMSBundle/Resources/less/bootstrap.less
+                - %kernel.root_dir%/../vendor/sandello-alkr/cmsbundle/alkr/CMSBundle/Resources/less/bootstrap.less
             filters:
                 - less
                 - cssrewrite
@@ -186,8 +186,8 @@ braincrafted_bootstrap:
         knp_menu: true
         knp_paginator: true
     customize:
-        variables_file: %kernel.root_dir%/../vendor/sandello-alkr/cmsbundle/sandello-alkr/CMSBundle/Resources/less/variables.less
-        bootstrap_output: %kernel.root_dir%/../vendor/sandello-alkr/cmsbundle/sandello-alkr/CMSBundle/Resources/less/bootstrap.less
+        variables_file: %kernel.root_dir%/../vendor/sandello-alkr/cmsbundle/alkr/CMSBundle/Resources/less/variables.less
+        bootstrap_output: %kernel.root_dir%/../vendor/sandello-alkr/cmsbundle/alkr/CMSBundle/Resources/less/bootstrap.less
     #     bootstrap_template: BraincraftedBootstrapBundle:Bootstrap:bootstrap.less.twig
 
 avalanche_imagine:
