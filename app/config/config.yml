@@ -310,22 +310,22 @@ jms_di_extra:
     locations:
         all_bundles: false
         bundles: [ParseyBundle]
-        directories: ["%kernel.root_dir%/../src/wideweb"]
+        directories: ["%kernel.root_dir%/../src/alkr","%kernel.root_dir%/../vendor/sandello-alkr/cmsbundle/alkr"]
 
 jms_translation:
     configs:
         dev:
             dirs: [%kernel.root_dir%, %kernel.root_dir%/../src]
-            output_dir: %kernel.root_dir%/../src/wideweb/ParseyBundle/Resources/translations
+            output_dir: %kernel.root_dir%/../src/alkr/TranslationBundle/Resources/translations
             ignored_domains: [routes]
             # excluded_names: [*TestCase.php, *Test.php]
             # excluded_dirs: [cache, data, logs]
             extractors: ["jms_i18n_routing"]
             output_format: yml
-        app:
-            dirs: [%kernel.root_dir%/../src]
-            output_dir: %kernel.root_dir%/../src/wideweb/ParseyBundle/Resources/translations
-            # ignored_domains: [routes]
-            # excluded_names: [*TestCase.php, *Test.php]
-            # excluded_dirs: [cache, data, logs]
-            extractors: ["jms_i18n_routing"]
+        # app:
+        #     dirs: [%kernel.root_dir%/../src]
+        #     output_dir: %kernel.root_dir%/../src/alkr/ParseyBundle/Resources/translations
+        #     # ignored_domains: [routes]
+        #     # excluded_names: [*TestCase.php, *Test.php]
+        #     # excluded_dirs: [cache, data, logs]
+        #     extractors: ["jms_i18n_routing"]
