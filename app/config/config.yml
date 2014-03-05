@@ -268,7 +268,7 @@ a2lix_translation_form:
     manager_registry: doctrine
     templating: "A2lixTranslationFormBundle::default.html.twig"
 
-doctine:
+doctrine:
     orm:
         auto_generate_proxy_classes: %kernel.debug%
         # auto_mapping: true
