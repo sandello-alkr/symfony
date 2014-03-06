@@ -6,6 +6,11 @@ exceptions:
 elfinder:
      resource: "@FMElfinderBundle/Resources/config/routing.yml"
 
+JMSTranslationBundle_ui:
+    resource: @JMSTranslationBundle/Controller/
+    type:     annotation
+    prefix:   /manager/_trans
+
 cmsSecurity:
     resource: "@CMSBundle/Controller/SecurityController.php"
     type:     annotation
