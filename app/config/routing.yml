@@ -61,11 +61,6 @@ cmsReview:
     type:     annotation
     prefix:   /
 
-cmsSettings:
-    resource: "@CMSBundle/Controller/SettingsController.php"
-    type:     annotation
-    prefix:   /
-
 cmsSlide:
     resource: "@CMSBundle/Controller/SlideController.php"
     type:     annotation
