@@ -247,6 +247,11 @@ services:
         tags:
             - { name: form.type_extension, alias: file }
 
+    twig.text_extension:
+        class: Twig_Extensions_Extension_Text
+        tags:
+            - name: twig.extension
+
 fos_comment:
     db_driver: orm
     class:
@@ -307,18 +312,19 @@ jms_di_extra:
 
 jms_translation:
     configs:
-        dev:
-            dirs: [%kernel.root_dir%, %kernel.root_dir%/../src]
-            output_dir: %kernel.root_dir%/../src/alkr/TranslationBundle/Resources/translations
-            ignored_domains: [routes]
-            # excluded_names: [*TestCase.php, *Test.php]
-            # excluded_dirs: [cache, data, logs]
-            extractors: ["jms_i18n_routing"]
-            output_format: yml
-        # app:
-        #     dirs: [%kernel.root_dir%/../src]
-        #     output_dir: %kernel.root_dir%/../src/alkr/ParseyBundle/Resources/translations
-        #     # ignored_domains: [routes]
+        # dev:
+        #     dirs: [%kernel.root_dir%/../src, %kernel.root_dir%/../vendor/sandello-alkr]
+        #     output_dir: %kernel.root_dir%/../src/alkr/ExtendCMSBundle/Resources/translations
+        #     ignored_domains: [routes]
         #     # excluded_names: [*TestCase.php, *Test.php]
         #     # excluded_dirs: [cache, data, logs]
         #     extractors: ["jms_i18n_routing"]
+        #     output_format: yml
+        app:
+            dirs: [%kernel.root_dir%/../src, %kernel.root_dir%/../vendor/sandello-alkr]
+            output_dir: %kernel.root_dir%/Resources/translations
+            # ignored_domains: [routes]
+            excluded_names: [*TestCase.php, *Test.php]
+            # excluded_dirs: [cache, data, logs]
+            # domain: 'TranslatorCMSBundle'
+            extractors: ["jms_i18n_routing"]
