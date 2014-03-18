@@ -31,11 +31,6 @@ cmsBlock:
     type:     annotation
     prefix:   /
 
-cmsCategory:
-    resource: "@CMSBundle/Controller/CategoryController.php"
-    type:     annotation
-    prefix:   /
-
 cmsDefault:
     resource: "@CMSBundle/Controller/DefaultController.php"
     type:     annotation
@@ -88,3 +83,5 @@ post_show:
 page_show:
     path:      /{url}
     defaults:  { _controller: CMSBundle:Default:showPage }
+    requirements:
+        url: .+

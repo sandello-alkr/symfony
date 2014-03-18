@@ -32,4 +32,10 @@ twig:
       reviews: false
     main:
       comments: false
+    modules:
+      views: false
+      feedback: false
+      map: false
+      gallery: false
 ...
+
