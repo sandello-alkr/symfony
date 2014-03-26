@@ -132,10 +132,14 @@ fos_elastica:
                 page:
                     mappings:
                         title: {boost: 5}
+                        annotation: {boost: 10}
                         content: {boost: 10}
+                        enabled: ~
                     persistence:
                         driver: orm # orm, mongodb, propel are available
-                        model: CMSBundle\Entity\Page
+                        model: alkr\CMSBundle\Entity\Page
+                        listener: 
+                            is_indexable_callback: "getEnabled"
                         provider: ~
                         finder: ~
         # prompages:
@@ -252,6 +256,12 @@ services:
         tags:
             - name: twig.extension
 
+    page.listener:
+        class: alkr\CMSBundle\Listener\PageListener
+        tags:
+            - { name: doctrine.event_listener, event: preUpdate, method: preUpdate }
+            - { name: doctrine.event_listener, event: postFlush, method: postFlush }
+
 fos_comment:
     db_driver: orm
     class:
@@ -297,14 +307,14 @@ stof_doctrine_extensions:
             translatable: true
 
 a2lix_translation_form:
-    locales: [ru, en, de]
+    locales: [ru, en]
     default_required: false
     manager_registry: doctrine
     templating: "A2lixTranslationFormBundle::default.html.twig"
 
 jms_i18n_routing:
     default_locale: ru
-    locales: [ru, en, de]
+    locales: [ru, en]
     strategy: prefix
 
 jms_di_extra:
