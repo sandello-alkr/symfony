@@ -43,7 +43,7 @@
         "avalanche123/imagine-bundle": "v2.1",
         "friendsofsymfony/elastica-bundle": "3.0.*@dev",
         "friendsofsymfony/comment-bundle": "2.0.*@dev",
-        "sandello-alkr/cmsbundle": "dev-trans",
+        "sandello-alkr/cmsbundle": "dev-test",
         "jms/i18n-routing-bundle": "1.1.*@dev",
         "jms/di-extra-bundle": "1.4.*@dev",
         "stof/doctrine-extensions-bundle": "1.1.*@dev",
