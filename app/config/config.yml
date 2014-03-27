@@ -303,6 +303,8 @@ fos_comment:
         #     delete: ROLE_ADMIN
 
 stof_doctrine_extensions:
+    class:
+        sluggable: alkr\CMSBundle\Misc\SluggableListener
     default_locale: ru
     translation_fallback: true
     persist_default_translation: false

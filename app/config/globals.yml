@@ -39,4 +39,5 @@ twig:
       gallery: false
       redirects: true
     base_template: 'one_sidebar.html.twig'
+    url_by_path: true
 ...
