@@ -37,5 +37,6 @@ twig:
       feedback: false
       map: false
       gallery: false
+      redirects: true
+    base_template: 'one_sidebar.html.twig'
 ...
-

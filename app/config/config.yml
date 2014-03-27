@@ -262,6 +262,12 @@ services:
             - { name: doctrine.event_listener, event: preUpdate, method: preUpdate }
             - { name: doctrine.event_listener, event: postFlush, method: postFlush }
 
+    exception.listener:
+        class: alkr\CMSBundle\Listener\RedirectExceptionListener
+        arguments: [@doctrine.orm.entity_manager,@router]
+        tags:
+            - { name: kernel.event_listener, event: kernel.exception, method: checkRedirect }
+
 fos_comment:
     db_driver: orm
     class:
