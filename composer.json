@@ -17,6 +17,10 @@
                     "type": "file"
                 }
             }
+        },
+        {
+            "type": "vcs",
+            "url": "http://github.com/sandello-alkr/GeneratorBundle"
         }
     ],
     "require": {
