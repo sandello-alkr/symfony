@@ -217,8 +217,8 @@ braincrafted_bootstrap:
         knp_menu: true
         knp_paginator: true
     customize:
-        variables_file: %kernel.root_dir%/../vendor/sandello-alkr/cmsbundle/alkr/CMSBundle/Resources/less/variables.less
-        bootstrap_output: %kernel.root_dir%/../vendor/sandello-alkr/cmsbundle/alkr/CMSBundle/Resources/less/bootstrap.less
+        variables_file: %kernel.root_dir%/../src/alkr/ExtendCMSBundle/Resources/less/variables.less
+        bootstrap_output: %kernel.root_dir%/../src/alkr/ExtendCMSBundle/Resources/less/bootstrap.less
     #     bootstrap_template: BraincraftedBootstrapBundle:Bootstrap:bootstrap.less.twig
 
 avalanche_imagine:
@@ -303,8 +303,8 @@ fos_comment:
         #     delete: ROLE_ADMIN
 
 stof_doctrine_extensions:
-    class:
-        sluggable: alkr\CMSBundle\Misc\SluggableListener
+    # class:
+    #     sluggable: alkr\CMSBundle\Misc\SluggableListener
     default_locale: ru
     translation_fallback: true
     persist_default_translation: false
@@ -315,15 +315,15 @@ stof_doctrine_extensions:
             translatable: true
 
 a2lix_translation_form:
-    locales: [ru, en]
+    locales: [ru]
     default_required: false
     manager_registry: doctrine
     templating: "A2lixTranslationFormBundle::default.html.twig"
 
 jms_i18n_routing:
     default_locale: ru
-    locales: [ru, en]
-    strategy: prefix
+    locales: [ru]
+    strategy: prefix_except_default
 
 jms_di_extra:
     locations:

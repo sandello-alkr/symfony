@@ -1,0 +1,19 @@
+<div class="back">
+    <div id="header" class="slider{% if hide_pic is defined %} hide_pic{% endif %}">
+            <div id="element1">
+                <div class="container">
+                    <a href="{{ path('index')}}" class="col-sm-6"><img class="img-responsive" src="/bundles/cms/img/logo.png"  width="309px" height="61px"></a>
+                    {% if header.menu %}
+                    <div class="col-sm-6">
+                        {{ render(controller('CMSBundle:Block:mainMenu')) }}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        {% if hide_pic is not defined %}
+        <div class="container">
+            <img class="slide-img hidden-xs" src="/bundles/cms/img/backpic.png" alt="клининг в Санкт-Петербурге" title="качественная уборка">
+        </div>
+        {% endif %}
+    </div>
+</div>

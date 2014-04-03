@@ -2,7 +2,7 @@
 twig:
   globals:
     sidebar:
-      menu: true
+      menu: false
       right: false
       search: false
       posts: false
@@ -12,15 +12,15 @@ twig:
       menu: false
       search: false
       posts: false
-      banner: true
+      banner: false
       gallery: false
     header:
-      menu: false
+      menu: true
       slider: false
       search: false
       navbar:
         main: true
-        reviews: true
+        reviews: false
         enabled: true
         inverse: false
         narrow: false
@@ -39,5 +39,4 @@ twig:
       gallery: false
       redirects: true
     base_template: 'one_sidebar.html.twig'
-    url_by_path: true
-...
+    url_by_path: false

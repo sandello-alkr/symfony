@@ -61,6 +61,11 @@ cmsSlide:
     type:     annotation
     prefix:   /
 
+cmsRedirect:
+    resource: "@CMSBundle/Controller/RedirectController.php"
+    type:     annotation
+    prefix:   /
+
 extendcms:
     resource: "@ExtendCMSBundle/Controller/"
     type:     annotation

@@ -1,7 +1,7 @@
-{% extends "ExtendCMSBundle::base.html.twig" %}
+{% extends "CMSBundle:Templates:"~template|default(base_template) %}
 
 {% block title %}Ошибка: {{ status_text }}{% endblock %}
-{% block content %}
-<p class="head">Ошибка</p>
+{% block body %}
+<h1>Ошибка</h1>
 Ошибка сервера.
 {% endblock %}
