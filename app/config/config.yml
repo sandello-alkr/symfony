@@ -135,13 +135,13 @@ fos_elastica:
                         annotation: {boost: 10}
                         content: {boost: 10}
                         enabled: ~
-                    persistence:
-                        driver: orm # orm, mongodb, propel are available
-                        model: alkr\CMSBundle\Entity\Page
-                        listener: 
-                            is_indexable_callback: "getEnabled"
-                        provider: ~
-                        finder: ~
+                    # persistence:
+                    #     driver: orm # orm, mongodb, propel are available
+                    #     model: alkr\CMSBundle\Entity\Page
+                    #     listener: 
+                    #         is_indexable_callback: "getEnabled"
+                    #     provider: ~
+                    #     finder: ~
         # prompages:
         #     client: default
         #     types:
