@@ -1,20 +1,19 @@
 {% if header.navbar.narrow and not header.navbar.fixed %}
-<div class="container row">
+<div class="container">
 {% endif %}
-    <div class="navbar header {% if header.navbar.inverse %}navbar-inverse{% else %}navbar-default{% endif %}{% if not header.navbar.narrow %} navbar-static-top{% endif %}{% if header.navbar.fixed %} navbar-fixed-top{% endif %} mint-fon" role="navigation">
+    <div class="navbar header {% if header.navbar.inverse %}navbar-inverse{% else %}navbar-default{% endif %}{% if not header.navbar.narrow %} navbar-static-top{% endif %}{% if header.navbar.fixed %} navbar-fixed-top{% endif %}" role="navigation">
     {% if header.navbar.fixed or not header.navbar.narrow %}<div class="container">{% endif %}
-    {#<div class="navbar-header">
+    {# <div class="navbar-header">
         <button type="button" class="navbar-toggle"
             data-toggle="collapse" data-target=".navbar-ex1-collapse">
             <span class="sr-only">{{'Toggle navigation'|trans}}</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-        </button>#}
-        <p class="worktime col-md-offset-3 col-md-3 col-sm-4 col-xs-12" ><span></span>{{'круглосуточно'|trans}} <br> {{'без выходных'|trans}}</p>
-        <p class="telephone col-md-3 col-sm-4 col-xs-12"><span></span><a href="tel:+78129814711">{{'8 (812) 981-47-11'|trans}}</a></p> 
-        <p class="e-mail col-md-3 col-sm-4 col-xs-12"><span></span><a href="mailto:briliant-group@mail.ru">{{'briliant-group@mail.ru'|trans}}</a></p>
-    {#</div>
+        </button> #}
+        <p class="telephone color-white"><span></span>{{'8 (921) 425-77-99'|trans}}</p>  
+        <p class="e-mail color-white" ><span></span>{{'gutastroy@mail.ru'|trans}}</p>
+    {# </div>
     <div class="navbar-collapse navbar-right collapse navbar-ex1-collapse">
         {{ render(controller('CMSBundle:Block:mainMenu')) }}
         {% if header.search %}
@@ -26,6 +25,6 @@
             <button type="submit" class="btn btn-default">{{'Искать'|trans}}</button>
         </form>
         {% endif %}
-    </div><!--/.nav-collapse -->#}
+    </div><!--/.nav-collapse --> #}
   </div>
 </div>

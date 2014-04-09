@@ -2,18 +2,34 @@
     <div id="header" class="slider{% if hide_pic is defined %} hide_pic{% endif %}">
             <div id="element1">
                 <div class="container">
-                    <a href="{{ path('index')}}" class="col-sm-6"><img class="img-responsive" src="/bundles/cms/img/logo.png"  width="309px" height="61px"></a>
-                    {% if header.menu %}
-                    <div class="col-sm-6">
-                        {{ render(controller('CMSBundle:Block:mainMenu')) }}
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <a href="{{ path('index')}}"><img class="img-responsive" src="/bundles/extendcms/img/logo.png"  width="309px" height="61px"></a>
+                        </div>
+                        {% if header.menu %}
+                        <div class="col-md-8 col-sm-12">
+                            <div class="navbar navbar-default " role="navigation">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle"
+                                        data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                        <span class="button-text">Меню</span>
+                                        <span class="sr-only">{{'Toggle navigation'|trans}}</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <div class="navbar-collapse collapse navbar-ex1-collapse">
+                                    {{ render(controller('CMSBundle:Block:mainMenu')) }}
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
                     </div>
-                    {% endif %}
                 </div>
             </div>
         {% if hide_pic is not defined %}
-        <div class="container">
-            <img class="slide-img hidden-xs" src="/bundles/cms/img/backpic.png" alt="клининг в Санкт-Петербурге" title="качественная уборка">
-        </div>
+        <img class="slide-img hidden-xs" src="/bundles/extendcms/img/background.jpg" alt="фоновая картинка">
         {% endif %}
     </div>
 </div>

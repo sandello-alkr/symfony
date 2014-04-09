@@ -1,7 +1,7 @@
-{% extends "CMSBundle:Default:showPage.html.twig" %}
+{% extends "ExtendCMSBundle::base.html.twig" %}
 
 {% block title %}Ошибка: {{ status_text }}{% endblock %}
-{% block body %}
-<h1>Ошибка</h1>
+{% block content %}
+<p class="head">Ошибка</p>
 Страницы с таким адресом не существует.
 {% endblock %}
