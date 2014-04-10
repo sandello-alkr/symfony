@@ -40,5 +40,5 @@ twig:
       redirects: true
     base_template: 'one_sidebar.html.twig'
     url_by_path: false
-    top_menu_parent: 69
-    left_menu_parent: 69
+    top_menu_parent: 5
+    left_menu_parent: 1
