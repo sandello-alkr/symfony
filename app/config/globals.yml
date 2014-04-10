@@ -5,7 +5,7 @@ twig:
       menu: false
       right: false
       search: false
-      posts: false
+      posts: true
       banner: false
       gallery: false
     sidebar2:
@@ -36,7 +36,9 @@ twig:
       views: false
       feedback: false
       map: false
-      gallery: false
+      gallery: true
       redirects: true
     base_template: 'one_sidebar.html.twig'
     url_by_path: false
+    top_menu_parent: 69
+    left_menu_parent: 69
