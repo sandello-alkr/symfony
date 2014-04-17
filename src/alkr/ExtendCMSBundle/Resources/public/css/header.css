@@ -27,3 +27,7 @@
 .navbar-toggle {
 	margin-right: 0;
 }
+.navbar-static-bottom {
+	margin-bottom: 0;
+	border-bottom: 0;
+}

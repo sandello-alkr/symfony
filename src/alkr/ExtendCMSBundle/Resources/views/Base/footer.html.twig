@@ -1,6 +1,6 @@
 <div id="footer">
     {% if header.navbar.narrow %}<div class="container">{% endif %}
-    <div class="navbar {% if header.navbar.inverse %}navbar-inverse{% else %}navbar-default{% endif %}{% if not header.navbar.narrow %} navbar-static-top{% endif %} mint-fon" role="navigation">
+    <div class="navbar {% if header.navbar.inverse %}navbar-inverse{% else %}navbar-default{% endif %}{% if not header.navbar.narrow %} navbar-static-bottom navbar-static-top{% endif %} mint-fon" role="navigation">
         {% if not header.navbar.narrow %}<div class="container">{% endif %}
         {% if footer.menu %}
         <div class="navbar-footer mint-fon">
