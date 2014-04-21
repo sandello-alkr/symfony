@@ -10,10 +10,13 @@
 
 {% block content %}
 <div class="container my_container">
-	<div class="sidebar left">
+	<div class="content">
+		{% block body %}
+		{% endblock %}
+	</div>
+	<div class="sidebar left ">
 	{% block sidebar %}
 		{% if sidebar.menu %}
-		
 		{{ render(controller('CMSBundle:Block:leftMenu')) }}
 		{% endif %}
 		{% if sidebar.search %}
@@ -61,10 +64,6 @@
 		</script>
 		{% endif %}
 	{% endblock %}
-	</div>
-	<div class="content">
-		{% block body %}
-		{% endblock %}
 	</div>
 	<div class="clearfix"></div>
 </div>
