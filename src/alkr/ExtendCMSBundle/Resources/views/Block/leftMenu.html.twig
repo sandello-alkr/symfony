@@ -1,17 +1,16 @@
-
-<p>Услуги</p>
 <ul class="nav main">
-{% for page in pages %}
-	{{ _self.display_tree(page,repo) }}
-{% endfor %}
+	{% for page in pages %}
+		{{ _self.display_tree(page,repo) }}
+		<div class="divider"></div>
+	{% endfor %}
 </ul>
 
 {% macro display_tree(page,repo) %}
-	<li{% if page.lvl == 2 %} class="" data-category="{{page.id}}"{% endif %}>
-		{% if app.request.uri != page.path %}
+	<li>
+		{% if app.request.uri != page.path and page.lvl != 1 %}
 			<a href="{{ path('page_show',{'url':page.path}) }}">{{ page.title }}</a>
 		{% else %}
-			<span>{{ page.title }}</span>
+			<span class="visible-sm visible-xs">{{ page.title }}</span>
 		{% endif %}
 		{% set children = repo.children(page,true,'prior') %}
 		{% if children|length > 0 %}
