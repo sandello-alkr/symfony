@@ -20,7 +20,11 @@
         },
         {
             "type": "vcs",
-            "url": "http://github.com/sandello-alkr/GeneratorBundle"
+            "url": "https://github.com/sandello-alkr/GeneratorBundle"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/sandello-alkr/bootstrap-bundle"
         }
     ],
     "require": {
@@ -39,7 +43,7 @@
         "exercise/htmlpurifier-bundle": "1.0.*@dev",
         "trsteel/ckeditor-bundle": "1.3.*@dev",
         "helios-ag/fm-elfinder-bundle": "1.4.2",
-        "braincrafted/bootstrap-bundle": "~2.0",
+        "braincrafted/bootstrap-bundle": "dev-sass",
         "knplabs/knp-menu": "2.0.*@dev",
         "knplabs/knp-menu-bundle": "2.0.*@dev",
         "twbs/bootstrap-sass": "3.1.*",
