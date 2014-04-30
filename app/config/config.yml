@@ -246,6 +246,12 @@ avalanche_imagine:
             options: { size: [200, 150], mode: inset }
 
 services:
+    cms_bundle.extended_entity.widget:
+        class: alkr\CMSBundle\Form\Extension\ExtendedEntityType
+        arguments: [@property_accessor]
+        tags:
+            - { name: form.type, alias: extended_entity }
+
     cms_bundle.image_type_extension:
         class: alkr\CMSBundle\Form\Extension\ImageTypeExtension
         tags:
