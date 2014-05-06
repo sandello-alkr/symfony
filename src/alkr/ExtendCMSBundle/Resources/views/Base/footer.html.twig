@@ -11,11 +11,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        {#<a class="navbar-brand" href="{{ path('index')}}">Wide-web</a>#}
     </div>
     <div class="navbar-collapse collapse navbar-ex2-collapse">
         {{ knp_menu_render('CMSBundle:Builder:footerMenu',{'style':'navbar'}) }}
-    </div><!--/.nav-collapse -->
+    </div>
     {% endif %}
     <div class="left">Copyright &copy; {{'копирайт с какого года'|trans}}-{{date()|date('Y')}} &mdash; {{'Название компании'|trans}}</div>
     <div class="right">{{'Сайт работает на технологии'|trans}} <a href="http://space-pencil.ru" target="_blank"><img src="/space.png"/></a>&nbsp;<a href="http://space-pencil.ru" target="_blank">Космический&nbsp;карандаш</a></div>
