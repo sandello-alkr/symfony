@@ -1,44 +1,44 @@
----
-twig:
-  globals:
-    sidebar:
-      menu: false
-      right: false
-      search: false
-      posts: true
-      banner: false
-      gallery: false
-    sidebar2:
-      menu: false
-      search: false
-      posts: false
-      banner: false
-      gallery: false
-    header:
-      menu: true
-      slider: false
-      search: false
-      navbar:
-        main: true
-        reviews: false
-        enabled: true
-        inverse: false
-        narrow: false
-        fixed: false
-    footer:
-      menu: false
-      sitemap: false
-      faq: false
-      reviews: false
-    main:
-      comments: false
-    modules:
-      views: false
-      feedback: false
-      map: false
-      gallery: true
-      redirects: true
-    base_template: 'one_sidebar.html.twig'
-    url_by_path: false
-    top_menu_parent: 5
-    left_menu_parent: 1
+# ---
+# twig:
+#   globals:
+#     sidebar:
+#       menu: false
+#       right: false
+#       search: false
+#       posts: true
+#       banner: false
+#       gallery: false
+#     sidebar2:
+#       menu: false
+#       search: false
+#       posts: false
+#       banner: false
+#       gallery: false
+#     header:
+#       menu: true
+#       slider: false
+#       search: false
+#       navbar:
+#         main: true
+#         reviews: false
+#         enabled: true
+#         inverse: false
+#         narrow: false
+#         fixed: false
+#     footer:
+#       menu: false
+#       sitemap: false
+#       faq: false
+#       reviews: false
+#     main:
+#       comments: false
+#     modules:
+#       views: false
+#       feedback: false
+#       map: false
+#       gallery: true
+#       redirects: true
+#     base_template: 'one_sidebar.html.twig'
+#     url_by_path: false
+#     top_menu_parent: 5
+#     left_menu_parent: 1

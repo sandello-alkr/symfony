@@ -17,7 +17,7 @@ class DefaultController extends BaseController
     public function indexAction()
     {
         $response = parent::indexAction();
-        $response['template'] = 'full_width.html.twig';
+        $response['template'] = 'two_sidebars';
         return $response;
     }
 }

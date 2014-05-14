@@ -1,9 +1,0 @@
-{% if header.navbar.narrow and not header.navbar.fixed %}
-<div class="container">
-{% endif %}
-    <div class="navbar header {% if header.navbar.inverse %}navbar-inverse{% else %}navbar-default{% endif %}{% if not header.navbar.narrow %} navbar-static-top{% endif %}{% if header.navbar.fixed %} navbar-fixed-top{% endif %}" role="navigation">
-    {% if header.navbar.fixed or not header.navbar.narrow %}<div class="container">{% endif %}
-        <p class="telephone color-white"><span></span>{{'8 (921) 425-77-99'|trans}}</p>  
-        <p class="e-mail color-white" ><span></span>{{'gutastroy@mail.ru'|trans}}</p>
-  </div>
-</div>

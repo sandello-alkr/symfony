@@ -11,9 +11,9 @@
             "type": "package",
             "package": {
                 "name": "jquery/jquery",
-                "version": "1.10.2",
+                "version": "1.11.1",
                 "dist": {
-                    "url": "http://code.jquery.com/jquery-1.10.2.js",
+                    "url": "http://code.jquery.com/jquery-1.11.1.min.js",
                     "type": "file"
                 }
             }
@@ -55,7 +55,7 @@
         "avalanche123/imagine-bundle": "v2.1",
         "friendsofsymfony/elastica-bundle": "3.0.*@dev",
         "friendsofsymfony/comment-bundle": "2.0.*@dev",
-        "sandello-alkr/cmsbundle": "dev-test",
+        "sandello-alkr/cmsbundle": "~1.1.*",
         "sandello-alkr/exceptionsbundle": "dev-master",
         "jms/i18n-routing-bundle": "1.1.*@dev",
         "jms/di-extra-bundle": "1.4.*@dev",
