@@ -11,7 +11,8 @@ security:
             memory:
                 users:
                     user:  { password: userpass, roles: [ 'ROLE_USER' ] }
-                    admin: { password: adminpass, roles: [ 'ROLE_ADMIN' ] }
+                    reporter:  { password: JUeVSKxx, roles: [ 'ROLE_USER' ] }
+                    admin: { password: ekko26e0, roles: [ 'ROLE_ADMIN' ] }
 
     firewalls:
         dev:
