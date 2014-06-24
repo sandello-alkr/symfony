@@ -20,3 +20,5 @@ parameters:
     address: 'Брест, Советская, 67'
     baloon: 'Офис'
     baloon_text: 'Офис в центре города'
+
+    top_menu_parent: 5

@@ -51,6 +51,7 @@
         "knplabs/knp-menu": "2.0.*@dev",
         "knplabs/knp-menu-bundle": "2.0.*@dev",
         "twbs/bootstrap-sass": "3.1.*",
+        "packagist/yuicompressor-bin": "v2.4.8",
         "components/jquery":  "1.10.*",
         "avalanche123/imagine-bundle": "v2.1",
         "friendsofsymfony/elastica-bundle": "3.0.*@dev",
