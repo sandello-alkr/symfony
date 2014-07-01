@@ -24,10 +24,6 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/sandello-alkr/bootstrap-bundle"
-        },
-        {
-            "type": "vcs",
             "url": "https://github.com/sandello-alkr/CustomExceptionsBundle"
         }
     ],
