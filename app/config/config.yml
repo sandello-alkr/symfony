@@ -227,7 +227,7 @@ knp_menu:
 braincrafted_bootstrap:
     output_dir:
     assets_dir: %kernel.root_dir%/../vendor/twbs/bootstrap-sass/vendor/assets
-    jquery_path: %kernel.root_dir%/../vendor/jquery/jquery/jquery-1.11.1.min.js
+    jquery_path: %kernel.root_dir%/../vendor/components/jquery/jquery.min.js
     less_filter: sass # "less", "lessphp" or "none"
     auto_configure:
         assetic: true
