@@ -185,7 +185,7 @@ trsteel_ckeditor:
         basicstyles: ['Bold','Italic','Underline','Strike','Subscript','Superscript','-','RemoveFormat']
         paragraph: ['NumberedList','BulletedList','-','Outdent','Indent','-','JustifyLeft', 'JustifyCenter','JustifyRight','JustifyBlock']
         links: ['Link','Unlink','Anchor']
-        insert: ['Image','Flash','Table','HorizontalRule']
+        insert: ['Image','MediaEmbed','Table','HorizontalRule']
         styles: ['Styles','Format']
         tools: ['Maximize', 'ShowBlocks']
     ui_color: '#000000'
@@ -197,6 +197,19 @@ trsteel_ckeditor:
     #     url: relative-url.php?type=file
     filebrowser_image_browse_url:
         route: elfinder
+    extra_allowed_content: iframe[*]
+    html_purifier:
+        config:
+            HTML.SafeIframe: true
+            URI.SafeIframeRegexp: '%%^(https?:)?//(www\.youtube(?:-nocookie)?\.com/embed/|player\.vimeo\.com/video/)%%'
+    external_plugins:
+        mediaembed:
+            path: js/ckeditor/plugins/mediaembed
+        templates:
+            path: js/ckeditor/plugins/templates
+    templates_files:
+        - /js/ckeditor/plugins/templates/templates/custom.js
+    extra_allowed_content: true
     #     route_parameters:
     #         type: image
     # custom_config: %kernel.root_dir%/../src/alkr/CMSBundle/Resources/config/ckeditor.js
