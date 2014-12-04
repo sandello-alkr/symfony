@@ -18,3 +18,4 @@ parameters:
 
     locale: ru
     secret: space-pencilsecrettoken
+    excludes: 5
